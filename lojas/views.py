@@ -6,3 +6,6 @@ def estabelecimentos(request):
 
 def loja_1(request):
     return HttpResponse('Loja 1')
+
+def loja_2(request):
+    return HttpResponse('Loja 2')
