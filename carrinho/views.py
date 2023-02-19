@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
-def carrinho(request):
+def index(request):
     return render(request, 'carrinho/index.html')

@@ -3,5 +3,5 @@ from . import views
 
 #carrinho/
 urlpatterns = [
-    path('', views.carrinho),
+    path('', views.index),
 ]

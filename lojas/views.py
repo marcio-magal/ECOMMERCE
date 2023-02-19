@@ -1,11 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-# Create your views here.
-def estabelecimentos(request):
-    return HttpResponse('Estabelecimentos')
+
+def index(request):
+    return render(request, 'lojas/index.html')
 
 def loja_1(request):
-    return HttpResponse('Loja 1')
+    return render(request, 'lojas/Loja_1.html')
 
 def loja_2(request):
-    return HttpResponse('Loja 2')
+    return render(request, 'lojas/Loja_2.html')
