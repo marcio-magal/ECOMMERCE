@@ -8,3 +8,6 @@ def loja_1(request):
 
 def loja_2(request):
     return render(request, 'lojas/Loja_2.html')
+
+def loja_3(request):
+    return render(request, 'lojas/Loja_3.html')
