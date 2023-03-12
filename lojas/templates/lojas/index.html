@@ -1,23 +1,51 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Estabelecimentos</title>
-</head>
-<body style="background-color:#EDEDED">
+    <head>
+        <meta charset="UTF-8">
+        <title>e-Commerce</title>
 
+        <link rel="stylesheet" type="text/css" href="{% static 'css/estilos.css' %}">
 
+    </head>
 
-    <h1>Página Inicial Estabelecimentos</h1>
+    <body>
+        <div id="menu">
 
-    <table>
-        <tr>
-		    <td><a href="http://127.0.0.1:8000/loja_1"><img src="{% static 'img/loja_1.png' %}"/></a></td>
-		    <td><a href="http://127.0.0.1:8000/loja_2"><img src="{% static 'img/loja_2.png' %}"/></a></td>
-		    <td><a href="http://127.0.0.1:8000/loja_3"><img src="{% static 'img/loja_3.png' %}"/></a></td>
-        </tr>
-    </table>
+            <span>
+                <a href=""><img src="{% static 'img/whatsapp.png' %}"/> Fale pelo whatsapp</a>
+                <a href=""><img src="{% static 'img/duvida.png' %}"/> Tire suas dúvidas</a>
+            </span>
 
-</body>
+        </div>
+
+        <div style="margin: 10px 50px">
+            <h1>e-Commerce</h1>
+            <h3>Comércio Local</h3>
+        </div>
+
+        <div align="center">
+
+			<a href="">Loja</a>
+			<a href="">Sobre</a>
+			<a href="">FAQ</a>
+			<a href="">Contato</a>
+
+        </div>
+
+        <span>
+            <a href="http://127.0.0.1:8000/login"><img src="{% static 'img/login.png' %}"/>Login</a>
+            <a href=""><img src="{% static 'img/face.png' %}"/></a>
+            <a href=""><img src="{% static 'img/insta.png' %}"/></a>
+            <a href=""><img src="{% static 'img/pint.png' %}"/></a>
+            <a href=""><img src="{% static 'img/cart.png' %}"/></a>
+        </span>
+
+        <div id="list">
+            <a href="http://127.0.0.1:8000/loja_1"><img src="{% static 'img/loja_1.png' %}"/></a>
+            <a href="http://127.0.0.1:8000/loja_2"><img src="{% static 'img/loja_2.png' %}"/></a>
+            <a href="http://127.0.0.1:8000/loja_3"><img src="{% static 'img/loja_3.png' %}"/></a>
+        </div>
+
+    </body>
 </html>

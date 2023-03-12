@@ -1,0 +1,20 @@
+#menu{
+    background: #F7F6F6;
+    padding: 15px 50px;
+}
+
+#list{
+    text-align: center;
+    padding: 30px;
+}
+
+a{
+    padding: 15px;
+}
+
+.registre-se {
+    border: 1px solid;
+    padding: 9px;
+    width: 276px;
+    margin-top: 15px;
+}
