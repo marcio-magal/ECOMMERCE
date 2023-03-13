@@ -1,12 +1,138 @@
+{% load static %}
+
 <!DOCTYPE html>
+
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Loja_2</title>
-</head>
-<body>
 
-    <h1>Loja 2</h1>
+    <head>
 
-</body>
+        <meta charset="UTF-8">
+        <title>Loja_2</title>
+
+        <link rel="stylesheet" type="text/css"
+              href="{% static 'css/estilos.css' %}">
+
+    </head>
+
+    <body>
+
+        <!--Início Cabeçalho-->
+        <div id="cabecalho">
+
+            <div id="top">
+
+                <img src="{% static 'img/whatsapp.png' %}"
+                     style="float: left; margin:5px 0px 0px 42px">
+
+                <a href="" style="float: left;margin: 12px 30px 0px 7px">
+                    Fale pelo whatsapp</a>
+
+                <img src="{% static 'img/duvida.png' %}"
+                     style="float: left; margin-top: 5px">
+
+                <a href="" style="float: left; margin: 12px 0px 0px 7px">
+                    Tire suas dúvidas</a>
+
+                <img src="{% static 'img/pesquisa.png' %}"
+                     align="right" style="margin-right: 57px">
+
+                <div class="clear"></div>
+
+            </div>
+
+            <div class="title">
+
+                <div>
+                    <h1 style="margin: 10px 0px 0px 45px">Loja_2</h1>
+                </div>
+
+                <div>
+                    <h3 style="margin:5px 0px 0px 45px">Comércio Local</h3>
+                </div>
+
+            </div>
+
+            <div align="right" style="
+            position: absolute;
+            top: 110px;
+            right: 75px">
+
+                <a href=""><img src="{% static 'img/cart.png' %}"
+                                style="float: right; padding-left: 15px"></a>
+
+                <a href=""><img src="{% static 'img/pint.png' %}"
+                                style="float: right; padding:5px 0px 0px 15px"></a>
+
+                <a href=""><img src="{% static 'img/insta.png' %}"
+                                style="float: right; padding:5px 0px 0px 15px"></a>
+
+                <a href=""><img src="{% static 'img/face.png' %}"
+                                style="float: right; padding:5px 0px 0px 25px"></a>
+
+                <a href="http://127.0.0.1:8000/login"
+                   style="float: right; padding: 5px 0px 0px 15px">Login</a>
+
+                <img src="{% static 'img/login.png' %}"
+                     style="float: right">
+
+            </div>
+
+            <div class="menu">
+
+                <a href="/" style="padding: 15px">Loja</a>
+                <a href="" style="padding: 15px">Sobre</a>
+                <a href="" style="padding: 15px">FAQ</a>
+                <a href="" style="padding: 15px">Contato</a>
+
+            </div>
+
+        </div><!--Início Cabeçalho-->
+
+
+        <div class="clear"></div>
+
+
+        <!--Início Lista de Produtos-->
+        <div align="center" style="margin-top: 225px">
+
+            <a href="" class="productList"><img
+                    src="{% static 'img/produto_01.png' %}"></a>
+
+            <a href="" class="productList"><img
+                    src="{% static 'img/produto_02.png' %}"></a>
+
+            <a href="" class="productList"><img
+                    src="{% static 'img/produto_03.png' %}"></a>
+
+            <a href="" class="productList"><img
+                    src="{% static 'img/produto_04.png' %}"></a>
+
+            <a href="" class="productList"><img
+                    src="{% static 'img/produto_05.png' %}"></a>
+
+            <a href="" class="productList"><img
+                    src="{% static 'img/produto_06.png' %}"></a>
+
+            <a href="" class="productList"><img
+                    src="{% static 'img/produto_07.png' %}"></a>
+
+            <a href="" class="productList"><img
+                    src="{% static 'img/produto_08.png' %}"></a>
+
+            <a href="" class="productList"><img
+                    src="{% static 'img/produto_09.png' %}"></a>
+
+            <a href="" class="productList"><img
+                    src="{% static 'img/produto_10.png' %}"></a>
+
+            <a href="" class="productList"><img
+                    src="{% static 'img/produto_11.png' %}"></a>
+
+            <a href="" class="productList"><img
+                    src="{% static 'img/produto_12.png' %}"></a>
+
+        </div><!--Fim Lista de Produtos-->
+
+    </body>
+
 </html>
