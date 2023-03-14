@@ -1,12 +1,153 @@
+{% load static %}
+
 <!DOCTYPE html>
+
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Produtos</title>
-</head>
-<body>
 
-    <h1>Página Lista de Produtos</h1>
+    <head>
 
-</body>
+        <meta charset="UTF-8">
+        <title>Produto</title>
+
+        <link rel="stylesheet" type="text/css"
+              href="{% static 'css/estilos.css' %}">
+
+    </head>
+
+    <body>
+
+        <!--Início Cabeçalho-->
+        <div id="cabecalho">
+
+            <div id="top">
+
+                <img src="{% static 'img/whatsapp.png' %}"
+                     style="float: left; margin:5px 0px 0px 42px">
+
+                <a href="" style="float: left;margin: 12px 30px 0px 7px">
+                    Fale pelo whatsapp</a>
+
+                <img src="{% static 'img/duvida.png' %}"
+                     style="float: left; margin-top: 5px">
+
+                <a href="" style="float: left; margin: 12px 0px 0px 7px">
+                    Tire suas dúvidas</a>
+
+                <img src="{% static 'img/pesquisa.png' %}"
+                     align="right" style="margin-right: 57px">
+
+                <div class="clear"></div>
+
+            </div>
+
+            <div class="title">
+
+                <div>
+                    <h1 style="margin: 10px 0px 0px 45px">e-Commerce</h1>
+                </div>
+
+                <div>
+                    <h3 style="margin:5px 0px 0px 45px">Comércio Local</h3>
+                </div>
+
+            </div>
+
+            <div align="right" style="
+            position: absolute;
+            top: 110px;
+            right: 75px">
+
+                <a href="/carrinho"><img src="{% static 'img/cart.png' %}"
+                                style="float: right; padding-left: 15px"></a>
+
+                <a href=""><img src="{% static 'img/pint.png' %}"
+                                style="float: right; padding:5px 0px 0px 15px"></a>
+
+                <a href=""><img src="{% static 'img/insta.png' %}"
+                                style="float: right; padding:5px 0px 0px 15px"></a>
+
+                <a href=""><img src="{% static 'img/face.png' %}"
+                                style="float: right; padding:5px 0px 0px 25px"></a>
+
+                <a href="http://127.0.0.1:8000/login"
+                   style="float: right; padding: 5px 0px 0px 15px">Login</a>
+
+                <img src="{% static 'img/login.png' %}"
+                     style="float: right">
+
+            </div>
+
+            <div class="menu">
+
+                <a href="/" style="padding: 15px">Loja</a>
+                <a href="" style="padding: 15px">Sobre</a>
+                <a href="" style="padding: 15px">FAQ</a>
+                <a href="" style="padding: 15px">Contato</a>
+
+            </div>
+
+        </div><!--Fim Cabeçalho-->
+
+
+        <div class="clear"></div>
+
+
+        <!--Carrinho-->
+        <div id="cart">
+
+            <div id="topCart">
+
+                <a href="/" style="float: left">Início</a> / Sou um produto
+
+                <div style="float: right">
+
+                    &lt; <a href="" style="padding: 5px"> Anterior </a> |
+
+                    <a href="" style="padding: 5px"> Próximo </a> &gt;
+
+                </div>
+
+            </div>
+
+            <div id="about">
+
+                <h1>Sou um produto</h1>
+
+                R$ 15,00
+                <br>
+                Cor:
+                <br>
+                Quantidade
+
+                <br>
+                <h3>INFORMAÇÕES DO PRODUTO</h3>
+
+                Sou uma informação do produto. Sou o lugar
+                para adicionar informações o produto, como
+                tamanho, material, cuidados especiais e
+                instruções para limpeza. Posso descrever
+                porque este produto é especial e como os
+                clientes podem se beneficiar dele.
+
+            </div>
+
+            <div id="product">
+                <img src="{% static 'img/produto_01.png' %}">
+            </div>
+
+            <div id="imgProduct">
+                imagens
+            </div>
+
+            <div id="description">
+                <p>Sou uma descrição do produto. Sou o lugar para
+                adicionar mais detalhes sobre o produto, como
+                tamanho, material, cuidados especiais e
+                instruções para limpeza.</p>
+            </div>
+
+        </div><!--Fim Carrinho-->
+
+    </body>
+
 </html>

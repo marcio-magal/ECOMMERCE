@@ -9,6 +9,7 @@ body {
     background: white;
     position: fixed;
     top: 0px;
+    z-index: 1;
 }
 
 #top {
@@ -31,7 +32,7 @@ body {
     clear: both;
 }
 
-.storeList{
+.storeList {
     padding: 25px
 }
 
@@ -46,4 +47,46 @@ body {
     margin-top: 15px;
 }
 
-/*Página Lpja_1*/
+/*Página Carrinho*/
+#cart {
+    border: 1px solid red;
+    width: 800px;
+    height: 900px;
+    position: relative;
+    top: 250px;
+    margin: 0px auto;
+}
+
+#topCart {
+    border: 1px solid;
+    width: 800px;
+    height: 60px;
+    position: relative;
+}
+
+#product {
+    border: 1px solid blue;
+    width: 430px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imgProduct{
+    border: 1px solid;
+    width: 430px;
+    height: 60px;
+}
+
+#description{
+    border: 1px solid;
+    width: 430px;
+}
+
+#about {
+    border: 1px solid green;
+    width: 350px;
+    float: right;
+}
