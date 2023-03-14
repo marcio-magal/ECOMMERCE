@@ -11,21 +11,45 @@
 
     <body>
 
-    <div style="position: fixed; top: 65px; right: 50px;"> <a href="http://127.0.0.1:8000"> <img src="{% static 'img/fechar.png' %}"> </a> </div>
+        <div style="position: fixed; top: 65px; right: 50px;">
+            <a href="/"> <img src="{% static 'img/fechar.png' %}"> </a>
+        </div>
 
-        <div align="center" class="login" style="margin: 12% auto">
+        <div id="login">
 
-            <div><h1>Registre-se</h1></div>
+            <div>
+                <h1>Registre-se</h1>
+            </div>
 
-            <div><h4> Já é membro? <span> <a href="">Login</a> </span> </h4></div>
+            <div>
+                <h4>Já é membro? <span><a href="#">Login</a></span></h4>
+            </div>
 
-            <div> <a href=""> <img src="{% static 'img/face-login.png' %}"> </a> </div>
+            <div>
+                <a href="#"><img src="{% static 'img/face-login.png' %}"></a>
+            </div>
 
-            <div> <a href=""> <img src="{% static 'img/google-login.png' %}"> </a> </div>
+            <div>
+                <a href="#"><img src="{% static 'img/google-login.png' %}"></a>
+            </div>
 
-            <div> _________________ou_________________ </div>
+            <div>_______________ou_________________</div>
 
-            <div class="registre-se"><a href=""> Registre-se com seu email </a></div>
+            <br>
+
+            <div style="
+                    border: 1px solid;
+                    width: 294px;
+                    height: 36px;
+                    margin: 0px auto;
+                 ">
+
+                <a href="" style="
+                                position: relative;
+                                top: 10px;
+                            "> Registre-se com seu email </a>
+
+            </div>
 
         </div>
 

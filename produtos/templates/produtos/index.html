@@ -97,7 +97,11 @@
 
             <div id="topCart">
 
-                <a href="/" style="float: left">Início</a> / Sou um produto
+                <a href="/" style="
+                                float: left;
+                                margin-right: 5px;
+                            ">Início
+                </a> / Sou um produto
 
                 <div style="float: right">
 
@@ -114,12 +118,34 @@
                 <h1>Sou um produto</h1>
 
                 R$ 15,00
-                <br>
-                Cor:
-                <br>
-                Quantidade
+                <br><br>
 
-                <br>
+                Cor:
+                <input type="radio" name="cor"> Preto
+                <input type="radio" name="cor"> Branco
+
+                <br><br>
+
+                Quantidade:
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+
+                <br><br>
+
+                <form>
+                    <input type="submit" value="Adicionar ao carrinho">
+                </form>
+
                 <h3>INFORMAÇÕES DO PRODUTO</h3>
 
                 Sou uma informação do produto. Sou o lugar
@@ -136,7 +162,8 @@
             </div>
 
             <div id="imgProduct">
-                imagens
+                <img src="{% static 'image1.png' %}" style="padding: 0px 10px">
+                <img src="{% static 'imege2.png' %}" style="padding: 0px 10px">
             </div>
 
             <div id="description">

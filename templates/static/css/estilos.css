@@ -40,11 +40,15 @@ body {
     padding: 18px;
 }
 
-.registre-se {
-    border: 1px solid;
-    padding: 9px;
-    width: 276px;
-    margin-top: 15px;
+/*Página de login*/
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350px;
+    text-align: center;
 }
 
 /*Página Carrinho*/
