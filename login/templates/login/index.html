@@ -2,52 +2,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
-        <title>Login</title>
 
-        <link rel="stylesheet" type="text/css" href="{% static 'css/estilos.css' %}">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css"
+              href="{% static 'css/bootstrap.min.css' %}">
+
+        <!-- Estilo customizado -->
+        <link rel="stylesheet" type="text/css"
+              href="{% static 'css/customized.css' %}">
+
+        <title>Login</title>
 
     </head>
 
     <body>
 
-        <div style="position: fixed; top: 65px; right: 50px;">
+        <div style="
+                position: fixed;
+                top: 60px;
+                right: 70px;
+            ">
+
             <a href="/"> <img src="{% static 'img/fechar.png' %}"> </a>
+
         </div>
 
         <div id="login">
 
             <div>
-                <h1>Registre-se</h1>
+                <h1 class="display-4">Registre-se</h1>
+                <br>
             </div>
 
             <div>
                 <h4>Já é membro? <span><a href="#">Login</a></span></h4>
             </div>
 
+            <br>
+
             <div>
                 <a href="#"><img src="{% static 'img/face-login.png' %}"></a>
             </div>
 
-            <div>
+            <div style="padding: 10px">
                 <a href="#"><img src="{% static 'img/google-login.png' %}"></a>
             </div>
 
-            <div>_______________ou_________________</div>
+            <div>____________________ou______________________</div>
 
             <br>
 
             <div style="
-                    border: 1px solid;
-                    width: 294px;
+                    width: 300px;
                     height: 36px;
                     margin: 0px auto;
                  ">
 
-                <a href="" style="
-                                position: relative;
-                                top: 10px;
-                            "> Registre-se com seu email </a>
+                <input class="btn btn-block btn-outline-secondary"
+                           type="button" value="Registre-se com seu email">
+                    <br>
 
             </div>
 
