@@ -2,6 +2,9 @@
 body {
     margin: 0px;
 }
+a {
+    text-decoration: none;
+}
 
 #cabecalho {
     width: 100%;
@@ -51,9 +54,9 @@ body {
     text-align: center;
 }
 
-/*Página Carrinho*/
-#cart {
-    border: 1px solid red;
+/*Página do produto*/
+#productPage {
+    /*border: 1px solid;*/
     width: 800px;
     height: 900px;
     position: relative;
@@ -61,15 +64,15 @@ body {
     margin: 0px auto;
 }
 
-#topCart {
-    border: 1px solid;
+#topProductPage {
+    /*border: 1px solid;*/
     width: 800px;
     height: 60px;
     position: relative;
 }
 
 #product {
-    border: 1px solid blue;
+    border: 1px solid;
     width: 430px;
     height: 500px;
     position: relative;
@@ -79,18 +82,18 @@ body {
 }
 
 #imgProduct{
-    border: 1px solid;
+    /*border: 1px solid;*/
     width: 430px;
     height: 60px;
 }
 
 #description{
-    border: 1px solid;
+    /*border: 1px solid;*/
     width: 430px;
 }
 
 #about {
-    border: 1px solid green;
+    /*border: 1px solid;*/
     width: 350px;
     float: right;
 }

@@ -22,21 +22,31 @@
             <div id="top">
 
                 <img src="{% static 'img/whatsapp.png' %}"
-                     style="float: left; margin:5px 0px 0px 42px">
+                     style="float: left;
+                        margin:5px 0px 0px 42px
+                     ">
 
-                <a href="" style="float: left;margin: 12px 30px 0px 7px">
-                    Fale pelo whatsapp</a>
+                <a href="" style="float: left;
+                                margin: 12px 30px 0px 7px;
+                            ">Fale pelo whatsapp
+                </a>
 
                 <img src="{% static 'img/duvida.png' %}"
-                     style="float: left; margin-top: 5px">
+                     style="float: left;
+                        margin-top: 5px
+                     ">
 
-                <a href="" style="float: left; margin: 12px 0px 0px 7px">
-                    Tire suas dúvidas</a>
+                <a href="" style="float: left;
+                                margin: 12px 0px 0px 7px
+                            ">Tire suas dúvidas
+                </a>
 
                 <img src="{% static 'img/pesquisa.png' %}"
                      align="right" style="margin-right: 57px">
 
+
                 <div class="clear"></div>
+
 
             </div>
 
@@ -53,24 +63,35 @@
             </div>
 
             <div align="right" style="
-            position: absolute;
-            top: 110px;
-            right: 75px">
+                                    position: absolute;
+                                    top: 110px;
+                                    right: 75px
+                                ">
 
                 <a href="/carrinho"><img src="{% static 'img/cart.png' %}"
-                                style="float: right; padding-left: 15px"></a>
+                                style="float: right;
+                                    padding-left: 15px">
+                </a>
 
                 <a href=""><img src="{% static 'img/pint.png' %}"
-                                style="float: right; padding:5px 0px 0px 15px"></a>
+                                style="float: right;
+                                padding:5px 0px 0px 15px">
+                </a>
 
                 <a href=""><img src="{% static 'img/insta.png' %}"
-                                style="float: right; padding:5px 0px 0px 15px"></a>
+                                style="float: right;
+                                    padding:5px 0px 0px 15px">
+                </a>
 
                 <a href=""><img src="{% static 'img/face.png' %}"
-                                style="float: right; padding:5px 0px 0px 25px"></a>
+                                style="float: right;
+                                    padding:5px 0px 0px 25px">
+                </a>
 
                 <a href="http://127.0.0.1:8000/login"
-                   style="float: right; padding: 5px 0px 0px 15px">Login</a>
+                   style="float: right;
+                        padding: 5px 0px 0px 15px">Login
+                </a>
 
                 <img src="{% static 'img/login.png' %}"
                      style="float: right">
@@ -93,9 +114,9 @@
 
 
         <!--Carrinho-->
-        <div id="cart">
+        <div id="productPage">
 
-            <div id="topCart">
+            <div id="topProductPage">
 
                 <a href="/" style="
                                 float: left;
@@ -115,45 +136,82 @@
 
             <div id="about">
 
-                <h1>Sou um produto</h1>
+                <h1 style="margin-top: 0px">Sou um produto</h1>
 
-                R$ 15,00
-                <br><br>
+                <br>
 
-                Cor:
-                <input type="radio" name="cor"> Preto
-                <input type="radio" name="cor"> Branco
+                <p> <strong> R$ 15,00 </strong> </p>
 
-                <br><br>
-
-                Quantidade:
-                <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                </select>
-
-                <br><br>
+                <br>
 
                 <form>
-                    <input type="submit" value="Adicionar ao carrinho">
+                    Cor:
+                    <input type="radio" name="cor"> Preto
+                    <input type="radio" name="cor"> Branco
+
+                    <br><br><br>
+
+                    Quantidade:
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                    </select>
+
+                    <br><br><br>
+
+                    <input type="button" value="Adicionar ao carrinho">
+                    <br><br><br>
+                    <input type="button" value="Compar">
+
                 </form>
 
-                <h3>INFORMAÇÕES DO PRODUTO</h3>
+                <br><br>
 
-                Sou uma informação do produto. Sou o lugar
-                para adicionar informações o produto, como
-                tamanho, material, cuidados especiais e
-                instruções para limpeza. Posso descrever
-                porque este produto é especial e como os
-                clientes podem se beneficiar dele.
+                <details>
+                    <summary> <strong>INFORMAÇÕES DO PRODUTO</strong> </summary>
+                    <p><strong>Sou uma informação do produto. Sou o lugar
+                        para adicionar informações o produto, como
+                        tamanho, material, cuidados especiais e
+                        instruções para limpeza. Posso descrever
+                        porque este produto é especial e como os
+                        clientes podem se beneficiar dele.</strong></p>
+                </details>
+
+                <br>
+                <hr>
+                <br>
+                <details>
+                    <summary> <strong>POLÍTICA DE RETORNO E REEMBOLSO</strong> </summary>
+                    <p><strong>Política de retorno e reembolso. Sou o lugar
+                        para os clientes saibam o que fazer caso
+                        estejam insatisfeitos com a compra. Ter uma
+                        política de reembolso ou de retorno é uma
+                        ótima maneira de estabelecer a confiança e
+                        garantir que os clientes podem comprar com
+                        segurança.</strong></p>
+                </details>
+
+                <br>
+                <hr>
+                <br>
+
+                <details>
+                    <summary> <strong>INFORMAÇÕES DE ENTREGA</strong> </summary>
+
+                    <p><strong>Sou uma política de envio. Sou o lugar para
+                        adicionar mais informações sobre os métodos
+                        de entrega, embalagens e custo. Ter uma
+                        política de entrega é uma ótima maneira de
+                        estabelecer confiança e garantir que os
+                        clientes podem comprar com segurança.</strong></p>
+                </details>
 
             </div>
 
@@ -162,15 +220,15 @@
             </div>
 
             <div id="imgProduct">
-                <img src="{% static 'image1.png' %}" style="padding: 0px 10px">
-                <img src="{% static 'imege2.png' %}" style="padding: 0px 10px">
+                <img src="{% static 'image1.png' %}" style="padding: 10px">
+                <img src="{% static 'imege2.png' %}" style="padding: 10px">
             </div>
 
             <div id="description">
-                <p>Sou uma descrição do produto. Sou o lugar para
-                adicionar mais detalhes sobre o produto, como
-                tamanho, material, cuidados especiais e
-                instruções para limpeza.</p>
+                <p><strong>Sou uma descrição do produto. Sou o lugar para
+                    adicionar mais detalhes sobre o produto, como
+                    tamanho, material, cuidados especiais e
+                    instruções para limpeza.</strong></p>
             </div>
 
         </div><!--Fim Carrinho-->
