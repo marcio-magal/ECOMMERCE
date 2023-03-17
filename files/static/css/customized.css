@@ -36,7 +36,7 @@ a {
 }
 
 .storeList {
-    padding: 25px
+    padding: 30px
 }
 
 .productList {
@@ -73,7 +73,7 @@ a {
 }
 
 #product {
-    border: 1px solid;
+    border: 1px solid #ccc;
     width: 430px;
     height: 500px;
     position: relative;
@@ -82,13 +82,13 @@ a {
     justify-content: center;
 }
 
-#imgProduct{
+#imgsProduct {
     /*border: 1px solid;*/
     width: 430px;
     height: 60px;
 }
 
-#description{
+#description {
     /*border: 1px solid;*/
     width: 430px;
 }
@@ -97,4 +97,8 @@ a {
     /*border: 1px solid;*/
     width: 350px;
     float: right;
+}
+
+footer p a {
+    margin: 5px 15px;
 }

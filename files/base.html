@@ -1,0 +1,172 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css"
+              href="{% static 'css/bootstrap.min.css' %}">
+
+        <!-- Estilo customizado -->
+        <link rel="stylesheet" type="text/css"
+              href="{% static 'css/customized.css' %}">
+
+        <title>{% block titolo %}{% endblock %}</title>
+
+    </head>
+
+
+
+    <body>
+
+        <!--Início Cabeçalho-->
+        <div id="cabecalho">
+
+            <div id="top">
+
+                <img src="{% static 'img/whatsapp.png' %}"
+                     style="float: left; margin:5px 0px 0px 42px">
+
+                <a href="https://wa.me/5591985048150"
+                   target="_blank" onclick="window.open(this.href); return false;"
+                   style="
+                        float: left;
+                        margin: 12px 30px 0px 7px
+                   "> Fale pelo whatsapp
+                </a>
+
+                <img src="{% static 'img/duvida.png' %}"
+                     style="float: left; margin-top: 5px">
+
+                <a href="tel:5591985048150" style="float: left; margin: 12px 0px 0px 7px">
+                    Tire suas dúvidas</a>
+
+                <img src="{% static 'img/pesquisa.png' %}"
+                     align="right" style="margin-right: 57px">
+
+                <div class="clear"></div>
+
+            </div>
+
+            <div class="title">
+
+                <div>
+                    <h1 style="
+                            margin: 10px 0px 0px 45px;
+                        ">
+                        {% block pagiana %}{% endblock %}
+                    </h1>
+                </div>
+
+                <div>
+                    <h5 style="
+                            margin:5px 0px 0px 45px;
+                        ">
+                        {% block info %}{% endblock %}
+                    </h5>
+                </div>
+
+            </div>
+
+            <div align="right"
+                 style="
+                    position: absolute;
+                    top: 110px;
+                    right: 75px
+                ">
+
+                <a href=""> <img src="{% static 'img/cart.png' %}"
+                                style="
+                                    float: right;
+                                    padding-left: 15px">
+                </a>
+
+                <a href=""> <img src="{% static 'img/pint.png' %}"
+                                style="
+                                    float: right;
+                                    padding:5px 0px 0px 15px">
+                </a>
+
+                <a href=""> <img src="{% static 'img/insta.png' %}"
+                                style="
+                                    float: right;
+                                    padding:5px 0px 0px 15px">
+                </a>
+
+                <a href=""> <img src="{% static 'img/face.png' %}"
+                                style="
+                                    float: right;
+                                    padding:5px 0px 0px 25px">
+                </a>
+
+                <a href="/login"
+                   style="
+                        float: right;
+                        padding: 3px 0px 0px 12px">Login
+                </a>
+
+                <img src="{% static 'img/login.png' %}"
+                     style="float: right">
+
+            </div>
+
+            <div class="menu">
+
+                <a href="/" style="padding: 15px">Loja</a>
+                <a href="" style="padding: 15px">Sobre</a>
+                <a href="" style="padding: 15px">FAQ</a>
+                <a href="" style="padding: 15px">Contato</a>
+
+            </div>
+
+        </div><!--Fim Cabeçalho-->
+
+
+
+        {% block conteudo %}{% endblock %}
+
+
+
+        <footer class="mt-4 mb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">menu</div>
+                    <a href="">Home</a>
+                    <a href="">Home</a>
+                    <a href="">Home</a>
+                    <a href="">Home</a>
+                    <div class="col-md-4">
+                        <a href="" class="btn btn-outline-dark">
+                            <i class="fab fa-android fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/
+        jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965Dz
+        O0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/
+        popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-Z
+        MP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/
+        l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+    </body>
+
+</html>
