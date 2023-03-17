@@ -37,13 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'home.apps.HomeConfig',
     'lojas.apps.LojasConfig',
+    'login.apps.LoginConfig',
     'produtos.apps.ProdutosConfig',
     'carrinho.apps.CarrinhoConfig',
     'checkout.apps.CheckoutConfig',
     'cadastroProduto.apps.CadastroprodutoConfig',
     'cadastroCliente.apps.CadastroclienteConfig',
-    'login.apps.LoginConfig',
 
 ]
 

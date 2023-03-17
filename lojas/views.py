@@ -1,7 +1,5 @@
 from django.shortcuts import render
 
-def index(request):
-    return render(request, 'lojas/index.html')
 
 def loja_1(request):
     return render(request, 'lojas/Loja_1.html')
