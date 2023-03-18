@@ -15,9 +15,9 @@
     <body>
 
         <!--Início Cabeçalho-->
-        <div id="cabecalho">
+        <nav>
 
-            <div id="top">
+            <header>
 
                 <img src="{% static 'img/whatsapp.png' %}"
                      style="float: left; margin:5px 0px 0px 42px">
@@ -41,7 +41,7 @@
 
                 <div class="clear"></div>
 
-            </div>
+            </header>
 
             <div class="title">
 
@@ -114,30 +114,19 @@
 
             </div>
 
-        </div><!--Fim Cabeçalho-->
+        </nav>
+            <!--Fim Cabeçalho-->
 
         {% block conteudo %}{% endblock %}
 
         <footer class="mt-4 mb-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">menu</div>
-                    <a href="">Home</a>
-                    <a href="">Home</a>
-                    <a href="">Home</a>
-                    <a href="">Home</a>
-                    <div class="col-md-4">
-                        <a href="" class="btn btn-outline-dark">
-                            <i class="fab fa-android fa-lg"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </footer>
 
+            <p align="center"> &copy; 2023 - Márcio Magalhães </p>
+
+        </footer>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/
+        <!--<script src="https://code.jquery.com/
         jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965Dz
         O0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
                 crossorigin="anonymous"></script>
@@ -145,8 +134,7 @@
         popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-Z
         MP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/
         l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="js/bootstrap.min.js"></script>
-
+        <script src="js/bootstrap.min.js"></script>-->
     </body>
 
 </html>
