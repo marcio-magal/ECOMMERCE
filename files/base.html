@@ -54,11 +54,11 @@
                 </div>
 
                 <div>
-                    <h5 style="
+                    <h6 style="
                             margin:5px 0px 0px 45px;
                         ">
-                        {% block info %}{% endblock %}
-                    </h5>
+                        <strong>{% block info %}{% endblock %}</strong>
+                    </h6>
                 </div>
 
             </div>
@@ -97,7 +97,7 @@
                 <a href="/login"
                    style="
                         float: right;
-                        padding: 3px 0px 0px 12px">Login
+                        padding: 3px 0px 0px 12px"> <strong> Login </strong>
                 </a>
 
                 <img src="{% static 'img/login.png' %}"
@@ -109,19 +109,27 @@
             <ul  style="padding-top: 30px" class="nav justify-content-center">
 
                 <li class="nav-item">
-                    <a href="/" style="color: black" class="nav-link">Loja</a>
+                    <a href="/" style="
+                    color: black" class="nav-link">
+                        <strong>Loja</strong></a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="" style="color: black" class="nav-link">Sobre</a>
+                    <a href="" style="
+                    color: black" class="nav-link">
+                        <strong>Sobre</strong></a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="" style="color: black" class="nav-link">FAQ</a>
+                    <a href="" style="
+                    color: black" class="nav-link">
+                        <strong>FAQ</strong></a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="" style="color: black" class="nav-link">Contato</a>
+                    <a href="" style="
+                    color: black" class="nav-link">
+                        <strong>Contato</strong></a>
                 </li>
 
             </ul> <!--Fim barra de navegação-->
@@ -131,10 +139,9 @@
         {% block conteudo %}{% endblock %}
 
         <footer>
-
-            <p align="center"> &copy; 2023 - Márcio Magalhães </p>
-
+            &copy; 2023 - Márcio Magalhães
         </footer>
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <!--<script src="https://code.jquery.com/
@@ -146,6 +153,7 @@
         MP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/
         l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js"></script>-->
+
     </body>
 
 </html>
