@@ -86,8 +86,12 @@ header {
 }
 
 #imgsProduct {
-    width: 430px;
+    width: 500px;
+}
+
+.imgs{
     height: 60px;
+    padding: 3px;
 }
 
 #description {

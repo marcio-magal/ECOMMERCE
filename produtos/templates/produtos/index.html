@@ -56,6 +56,7 @@
                     <br><br><br>
 
                     <strong>Quantidade:</strong>
+
                     <select>
                         <option>0</option>
                         <option>1</option>
@@ -121,19 +122,54 @@
             </div>
 
             <div id="product">
-                <img src="{% static 'img/produto_01.png' %}">
+                <div id="carousel" class="carousel slide" data-ride="carousel"><!--Carrousel-->
+
+                    <!--Indicadores-->
+                    <ol class="carousel-indicators">
+                        <li class="active" data-target="#carousel" data-slide-to="0"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner"><!--Inner-->
+
+                        <div class="carousel-item active">
+                            <img src="{% static 'img/imagem1.png' %}" class="img-fluid">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="{% static 'img/imagem2.png' %}" class="img-fluid">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="{% static 'img/imagem3.png' %}" class="img-fluid">
+                        </div>
+
+                    </div><!--/Inner-->
+
+                    <!--Controles-->
+                    <a href="#carousel" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+
+                    <a href="#carousel" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div><!--/Carrousel-->
             </div>
 
             <div id="imgsProduct">
-                <img src="{% static 'image1.png' %}" style="padding: 10px">
-                <img src="{% static 'imege2.png' %}" style="padding: 10px">
+                <img src="{% static 'img/imagem1.png' %}" class="imgs">
+                <img src="{% static 'img/imagem2.png' %}" class="imgs">
+                <img src="{% static 'img/imagem3.png' %}" class="imgs">
             </div>
 
             <div id="description">
                 <p><strong>Sou uma descrição do produto. Sou o lugar para
                     adicionar mais detalhes sobre o produto, como
                     tamanho, material, cuidados especiais e
-                    instruções para limpeza.</strong></p>
+                    instruções gerais.</strong></p>
             </div>
 
         </div><!--Fim Proguto-->
