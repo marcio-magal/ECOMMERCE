@@ -2,10 +2,10 @@ from django.shortcuts import render
 
 
 def loja_1(request):
-    return render(request, 'lojas/Loja_1.html')
+    return render(request, 'lojas/loja-1.html')
 
 def loja_2(request):
-    return render(request, 'lojas/Loja_2.html')
+    return render(request, 'lojas/loja-2.html')
 
 def loja_3(request):
-    return render(request, 'lojas/Loja_3.html')
+    return render(request, 'lojas/loja-3.html')
